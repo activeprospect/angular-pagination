@@ -4,7 +4,10 @@
   } else if (typeof exports === 'object') {
     module.exports = factory();
   }
-}(this, function(angular, $) {
+}(this, function(require) {
+  var $ = require('jquery');
+  var angular = require('angular');
+
   angular.module('Pagination', [])
     .directive('pages', ['$compile', function($compile){
       return {
