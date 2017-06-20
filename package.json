@@ -1,0 +1,17 @@
+{
+  "name": "angular-pagination",
+  "description": "Super simple pagination for angular apps",
+  "version": "0.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:justinwinslow/angular-pagination.git"
+  },
+  "authors": [
+    "Justin Winslow <justin@jwin.me> (http://jwin.me)"
+  ],
+  "dependencies": {
+    "jquery": "latest",
+    "angular": "latest"
+  }
+}
