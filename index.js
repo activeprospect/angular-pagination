@@ -1,10 +1,4 @@
-(function (root, factory) {
-  if (typeof define === 'function' && define.amd) {
-    define(factory);
-  } else if (typeof exports === 'object') {
-    module.exports = factory();
-  }
-}(this, function(require) {
+define(function(require){
   var $ = require('jquery');
   var angular = require('angular');
 
@@ -54,5 +48,4 @@
       };
     });
 
-  return angular.module('Pagination');
-}));
+});
