@@ -1,7 +1,7 @@
 {
   "name": "angular-pagination",
   "description": "Super simple pagination for angular apps",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "index.js",
   "repository": {
     "type": "git",
