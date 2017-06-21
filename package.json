@@ -1,5 +1,5 @@
 {
-  "name": "angular-pagination",
+  "name": "simple-angular-pagination",
   "description": "Super simple pagination for angular apps",
   "version": "0.0.1",
   "main": "index.js",
