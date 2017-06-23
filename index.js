@@ -6,7 +6,7 @@ define(function(require){
     .directive('pages', ['$compile', function($compile){
       return {
         compile: function(tElem, tAttrs){
-          var pages = tElem.find('> page').detach();
+          var pages = $(tElem).find('> page').detach();
           return {
             post: function(scope, el){
               var currentPage;
