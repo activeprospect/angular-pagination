@@ -1,5 +1,5 @@
 {
-  "name": "simple-angular-pagination",
+  "name": "@activeprospect/simple-angular-pagination",
   "description": "Super simple pagination for angular apps",
   "version": "0.0.2",
   "main": "index.js",
@@ -10,8 +10,8 @@
   "authors": [
     "Justin Winslow <justin@jwin.me> (http://jwin.me)"
   ],
-  "dependencies": {
-    "jquery": "latest",
-    "angular": "latest"
+  "peerDependencies": {
+    "jquery": "^3.2.1",
+    "angular": "^1.6.7"
   }
 }
