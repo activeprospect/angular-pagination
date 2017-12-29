@@ -11,7 +11,7 @@
     "Justin Winslow <justin@jwin.me> (http://jwin.me)"
   ],
   "dependencies": {
-    "jquery": "latest",
-    "angular": "latest"
+    "jquery": "^3.0.0",
+    "angular": "^1.6.7"
   }
 }
