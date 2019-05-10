@@ -62,5 +62,3 @@ angular.module('Pagination', [])
       template: '<button ng-click="prev()">Previous</button>'
     };
   });
-
-});
