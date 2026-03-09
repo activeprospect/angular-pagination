@@ -1,17 +1,17 @@
 {
-  "name": "simple-angular-pagination",
+  "name": "@activeprospect/simple-angular-pagination",
   "description": "Super simple pagination for angular apps",
   "version": "1.0.1",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:justinwinslow/angular-pagination.git"
+    "url": "git+ssh://git@github.com/activeprospect/angular-pagination.git"
   },
   "authors": [
     "Justin Winslow <justin@jwin.me> (http://jwin.me)"
   ],
   "dependencies": {
-    "jquery": "^3.0.0",
+    "jquery": "^3.7.1",
     "angular": "^1.7.2"
   }
 }
