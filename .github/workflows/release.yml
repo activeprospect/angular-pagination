@@ -14,7 +14,6 @@ jobs:
     name: 'Bump version and publish'
     env:
       VERSION: ${{ github.event.inputs.version }}
-      NPM_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
       GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
     steps:
       - uses: actions/checkout@v3
@@ -24,10 +23,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
+          registry-url: https://registry.npmjs.org
       - name: Install packages
         run: npm install
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
       - name: version and publish
         run: |
           git stash
@@ -37,3 +35,6 @@ jobs:
           npm version $VERSION -m "Version %s"
           npm publish
           git push gh-origin $GITHUB_REF --tags
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
+
